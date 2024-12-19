@@ -1,7 +1,7 @@
 motion:
     # this is the regex for one whole motion. it can include capturing groups. 
     # if it does, specify the groups in 'groups' in the order they appear in the regex.
-    regex: '(\d+\.)\t(.+?)\n\nIndiener: (.+?)\n\nAantal steunbetuigingen: (\d+?)\n\nSamenvatting\n\n(.+?)\n\nMotie\n\n(.+?)(?=\d+\.\t|\Z)'
+    regex: '(\d+\.)\t(.+?)\n\nIndiener: (.+?)\n\nAantal steunbetuigingen: (\d+?)\n\nSamenvatting\n\n(.+?)\n\nMotie\n\n(.+?)(?=^\d+\.\t|\Z)'
     groups:
         - id
         - title
